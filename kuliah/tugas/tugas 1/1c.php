@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tugas 1c.php</title>
     <style>
         .b1, .b2, .b3{
             width: 200px;
@@ -13,7 +13,7 @@
         .b1 {
             top: 0px;
         }
-        .b2 {
+        .b2 {   
             top: 50px;
         }
         .b3 {
