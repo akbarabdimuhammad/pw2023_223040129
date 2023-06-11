@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "../dashboard\koneksi.php";
+include "koneksi.php";
 ?>
 
 <!DOCTYPE html>
@@ -29,23 +29,23 @@ include "../dashboard\koneksi.php";
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
 
-                $cek = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = 
+                $cek = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = 
                 '".$user."' AND password = '".$pass."' ");
 
                 if(mysqli_num_rows($cek) > 0)
             {
                   $_SESSION['user'] = $_POST['user'];
-                  echo "<meta http-equiv=refresh content=0;URL='dashboarduser.php'>";
+                  echo "<meta http-equiv=refresh content=0;URL='dashboardadmin.php'>";
                 } else { 
                   echo "<p> Username dan Password Salah ! </p>";
-                  echo "<meta http-equiv=refresh content=0;URL='login.php'>";
+                  echo "<meta http-equiv=refresh content=0;URL='loginadmin.php'>";
                 }
               }
             ?>
         
       </div>
       <p class="para-2">
-        Not have an account? <a href="../dashboardphp\registrasi.php" id="registrasi.php">Sign Up Here</a>
+        Not have an account? <a href="../dashboard\registrasiadmin.php" id="registrasiadmin.php">Sign Up Here</a>
       </p>
       <p class="para-1">
          <a href="../index.html">BACK</a>

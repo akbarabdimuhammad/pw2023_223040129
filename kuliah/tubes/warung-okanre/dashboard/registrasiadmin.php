@@ -26,13 +26,13 @@
 </p>
 </div>
     <p class="para-2">
-      Already have an account? <a href="../dashboard\login.php" >Login here</a>
+      Already have an account? <a href="../dashboard\loginadmin.php" >Login here</a>
     </p>
   </body>
   </html>
 
   <?php
-    include "../dashboard\koneksi.php";
+    include "koneksi.php";
     if(isset($_POST['submit']))
     {
         $firstname  = $_POST['firstname'];
@@ -41,13 +41,13 @@
         $password   = $_POST['pass'];
 
         
-        mysqli_query($conn, "INSERT INTO tb_user VALUES(
+        mysqli_query($conn, "INSERT INTO tb_admin VALUES(
         '$firstname','$lastname','$username','$password'
         )") or die(mysqli_error($conn));
 
          echo "<script>
          alert('registrasi sukses!');
-         document.location.href = 'login.php';
+         document.location.href = 'loginadmin.php';
          </script>";
     }
 

@@ -1,6 +1,6 @@
 <?php 
-include "session.php";
-include "../dashboard\koneksi.php";
+include "sessionforadmin.php";
+include "koneksi.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +29,14 @@ include "../dashboard\koneksi.php";
         <div class="menu-icon" onclick="openSidebar()">
           <span class="material-icons-outlined"><i>menu</i></span>
         </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
         <div class="header-right">
-          <a href="logout.php" class="material-icons-outlined">logout </a>
+          <a href="" class="material-icons-outlined">notifications</a>
+          <a href=""class="material-icons-outlined">email</a>
+          <a href=""class="material-icons-outlined">account_circle</a>
+          <a href="logoutforadmin.php" class="material-icons-outlined">logout </a>
           </div>
       </header>
       <!-- End Header -->
@@ -46,18 +52,33 @@ include "../dashboard\koneksi.php";
 
         <ul class="sidebar-list">
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
+            <a href="#">
               <span class="material-icons-outlined">dashboard</span> Dashboard
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">inventory_2</span> Menu Kami 
+            <a href="#">
+              <span class="material-icons-outlined">inventory_2</span> Produk 
             </a>
           </li>
           <li class="sidebar-list-item">
-            <a href="datauser.php">
-              <span class="material-icons-outlined">fact_check</span> Data user
+            <a href="#">
+              <span class="material-icons-outlined">fact_check</span> Data Pemasukan
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">fact_check</span> Data Pengeluaran
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="datauserforadmin.php">
+              <span class="material-icons-outlined">fact_check</span> Data User
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">poll</span> laporan Keuangan
             </a>
           </li>
           <li class="sidebar-list-item">

@@ -1,0 +1,60 @@
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+}
+
+ table {
+    border-collapse: collapse;
+    font-size: 10pt;
+    border:0px solid #000000cc;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+form {
+    margin-left: 1cm;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-size: medium;
+}
+ form .form-control {
+    color: rgb(0, 0, 0);
+    background-color:rgb(214, 213, 142);
+    padding: 7px;
+   
+ }
+ button {
+    padding: 7px;
+    background-color: aquamarine;
+ }
+
+
+td{
+    padding: 30px;
+}
+
+
+th {
+    background-color: rgb(214, 213, 142);
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    padding: 10px;
+    margin-top: 10px;
+    height: 1px;
+    font-size: medium;
+}
+
+
+
+td a{
+    color: rgb(65, 169, 20);
+    height: 2px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
